@@ -2,6 +2,8 @@ buildscript {
     def supportRootFolder = project.projectDir.getParentFile()
     apply from: "unbundled_check.gradle"
     repositories {
+        jcenter()
+        google()
         maven {
             url "${supportRootFolder}/../../prebuilts/tools/common/m2/repository"
         }

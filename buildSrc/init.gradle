@@ -43,18 +43,18 @@ ext.docs.dac = [
 ]
 
 def enableDoclavaAndJDiff(p) {
-    p.configurations {
-        doclava
-        jdiff
-    }
+//    p.configurations {
+//        doclava
+//        jdiff
+//    }
 
-    p.dependencies {
-        doclava project(':doclava')
-        jdiff project(':jdiff')
-        jdiff libs.xml_parser_apis
-        jdiff libs.xerces_impl
-    }
-    apply from: "${ext.supportRootFolder}/buildSrc/diff_and_docs.gradle"
+//    p.dependencies {
+//        doclava project(':doclava')
+//        jdiff project(':jdiff')
+//        jdiff libs.xml_parser_apis
+//        jdiff libs.xerces_impl
+//    }
+//    apply from: "${ext.supportRootFolder}/buildSrc/diff_and_docs.gradle"
 }
 
 def getFullSdkPath() {
@@ -121,13 +121,13 @@ def setSdkInLocalPropertiesFile() {
         props.write "sdk.dir=${fullSdkPath}"
         ext.usingFullSdk = true
     } else {
-        gradle.ext.currentSdk = 'current'
-        project.ext.androidJar = files("${repos.prebuiltsRoot}/sdk/current/android.jar")
+        gradle.ext.currentSdk = 26
+//        project.ext.androidJar = files("${repos.prebuiltsRoot}/sdk/current/android.jar")
         project.ext.androidSrcJar = null
         project.ext.androidApiTxt = file("${repos.prebuiltsRoot}/sdk/api/26.txt")
         System.setProperty('android.dir', "${supportRootFolder}/../../")
         File props = file("local.properties")
-        props.write "android.dir=../../"
+//        props.write "android.dir=../../"
         ext.usingFullSdk = false
     }
 }

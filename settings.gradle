@@ -91,14 +91,14 @@ project(':wear').projectDir = new File(rootDir, 'wear')
 include ':support-tv-provider'
 project(':support-tv-provider').projectDir = new File(rootDir, 'tv-provider')
 
-include ':support-emoji'
-project(':support-emoji').projectDir = new File(rootDir, 'emoji/core')
+//include ':support-emoji'
+//project(':support-emoji').projectDir = new File(rootDir, 'emoji/core')
 
-include ':support-emoji-bundled'
-project(':support-emoji-bundled').projectDir = new File(rootDir, 'emoji/bundled')
+//include ':support-emoji-bundled'
+//project(':support-emoji-bundled').projectDir = new File(rootDir, 'emoji/bundled')
 
-include ':support-emoji-appcompat'
-project(':support-emoji-appcompat').projectDir = new File(rootDir, 'emoji/appcompat')
+//include ':support-emoji-appcompat'
+//project(':support-emoji-appcompat').projectDir = new File(rootDir, 'emoji/appcompat')
 
 include ':support-content'
 project(':support-content').projectDir = new File(rootDir, 'content')
@@ -153,8 +153,8 @@ project(':support-wear-demos').projectDir = new File(samplesRoot, 'SupportWearDe
 include ':support-app-navigation'
 project(':support-app-navigation').projectDir = new File(samplesRoot, 'SupportAppNavigation')
 
-include ':support-emoji-demos'
-project(':support-emoji-demos').projectDir = new File(samplesRoot, 'SupportEmojiDemos')
+//include ':support-emoji-demos'
+//project(':support-emoji-demos').projectDir = new File(samplesRoot, 'SupportEmojiDemos')
 
 /////////////////////////////
 //
@@ -186,16 +186,16 @@ project(':support-media-compat-test-lib').projectDir = new File(rootDir, 'media-
 //
 /////////////////////////////
 
-File externalRoot = new File(rootDir, '../../external')
+//File externalRoot = new File(rootDir, '../../external')
 
-include ':doclava'
-project(':doclava').projectDir = new File(externalRoot, 'doclava')
+//include ':doclava'
+//project(':doclava').projectDir = new File(externalRoot, 'doclava')
 
-include ':jdiff'
-project(':jdiff').projectDir = new File(externalRoot, 'jdiff')
+//include ':jdiff'
+//project(':jdiff').projectDir = new File(externalRoot, 'jdiff')
 
-include ':noto-emoji-compat'
-project(':noto-emoji-compat').projectDir = new File(externalRoot, 'noto-fonts/emoji-compat')
+//include ':noto-emoji-compat'
+//project(':noto-emoji-compat').projectDir = new File(externalRoot, 'noto-fonts/emoji-compat')
 
 ///// FLATFOOT START
 
